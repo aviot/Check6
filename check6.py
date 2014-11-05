@@ -12,7 +12,7 @@ while mail_send < 3:
         server.ehlo()
         server.starttls()
         server.login("checknexus666", "123456qwe123")
-        msg = "Nexus 6 is on sale!!!!!\nHurry up!!! s%" % a # The /n separates the message from the headers
+        msg = "Nexus 6 is on sale!!!!!\nHurry up!!! %s" % a # The /n separates the message from the headers
         server.sendmail("checknexus666@gmail.com", "aviotster@gmail.com", msg)
         server.close()
         mail_send += 1
